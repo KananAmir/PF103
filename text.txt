@@ -1,0 +1,13 @@
+html - hypertext markup language
+
+
+html elements (tags)
+html attributs
+css - cascading style sheets
+
+
+
+extentions: live server, auto close tag, auto rename
+
+
+seo: search engine optimization
