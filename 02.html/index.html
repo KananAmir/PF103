@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        tr,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            padding: 1rem 2rem;
+        }
+
+        .text {
+            background-color: orange;
+            font-size: 1.5rem;
+        }
+
+        #heading {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- emojis -->
+    <p>Lorem ipsum dolor &#128514; sit.</p>
+
+    <span>&lt</span>
+    <span>&gt</span>
+
+    <!-- attributes: local vs global -->
+    <h3 style="" id="" class="" title="main heading">Lorem ipsum dolor sit amet.</h3>
+
+
+    <p><ins>Lorem</ins>, <b>ipsum</b> dolor sit amet <i>consectetur</i> adipisicing elit. <span
+            style="text-decoration: line-through;">Neque</span>, fuga.</p>
+    <p>Lorem, <strong>ipsum</strong> dolor sit amet <em>consectetur</em> <mark>adipisicing</mark> elit.
+        <del>Neque</del>, <small>fuga</small>.
+    </p>
+
+    <span>hello <sub>world</sub></span>
+    <span>hello <sup>world</sup></span>
+
+    <hr />
+    <!-- anchor tag for external links -->
+    <a href="https://github.com/KananAmir" target="_blank">github url</a>
+
+
+    <hr />
+
+    <!-- <img src="https://www.pngplay.com/wp-content/uploads/12/GitHub-PNG-HD-Quality.png" alt="github logo" width="100px" height="100px"> -->
+
+
+    <a href="https://github.com/" target="_blank">
+        <img src="https://www.pngplay.com/wp-content/uploads/12/GitHub-PNG-HD-Quality.png" alt="github logo"
+            width="100px" height="100px">
+    </a>
+
+    <!-- lists -->
+
+    <!-- ul types: none, circle, square, disc -->
+    <ul>
+        <li>Zaur</li>
+        <li>Gunel</li>
+        <li>Gunay</li>
+        <li>Alizamin</li>
+        <li>Daniz</li>
+    </ul>
+
+    <!-- ol types: 1, a, i, A, I none -->
+    <ol type="i">
+        <li>Zaur</li>
+        <li>Gunel</li>
+        <li>Gunay</li>
+        <li>Alizamin</li>
+        <li>Daniz</li>
+    </ol>
+
+    <!-- <nav>
+        <ul>
+            <li>
+                <a href="#">about</a>
+            </li>
+            <li>
+                <a href="#">contact</a>
+            </li>
+            <li>
+                <a href="#">team</a>
+            </li>
+        </ul>
+    </nav> -->
+
+
+    <ol type="1">
+        <li>Main Course</li>
+        <ul type="circle">
+            <li>Starter</li>
+            <li>Entree</li>
+        </ul>
+        <li>Desserts</li>
+        <ol>
+            <li>Cake</li>
+            <li>Ice Cream</li>
+        </ol>
+    </ol>
+
+    <a href="">
+        <img src="" alt="">
+    </a>
+
+
+    <hr>
+
+    <!-- tables -->
+
+
+    <!-- <table border="1px"> -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Full Name</th>
+                <!-- <th>Last Name</th> -->
+                <th>Email</th>
+                <th>Photo</th>
+                <th>Class Name</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+            <tr>
+                <td>Zaur</td>
+                <td>Rustamov</td>
+                <td>
+                    <p>zaur@code.edu.az</p>
+                    <hr>
+                    <p>zaur@code.edu.az</p>
+                </td>
+                <td>
+                    <img src="https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes.png"
+                        alt="zaur" width="100">
+                </td>
+                <td rowspan="2">PF103</td>
+
+            </tr>
+            <tr>
+                <td>Gunel</td>
+                <td>Allahverdiyeva</td>
+                <td>gunel@code.edu.az</td>
+                <td>
+                    <img src="https://img.freepik.com/premium-vector/user-woman-avatar-female-profile-icon-woman-character-portrait-with-smile-vector_555028-184.jpg"
+                        alt="gunel" width="100">
+                </td>
+                <!-- <td>PF103</td> -->
+            </tr>
+        </tbody>
+        <tfoot></tfoot>
+    </table>
+
+
+    <hr>
+
+    <iframe src="" frameborder="0"></iframe>
+
+
+
+
+    <section>
+        <!-- <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.4328746853553!2d49.84912637553812!3d40.37709777144593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d079efb5163%3A0xc20aa51a5f0b5e01!2sCode%20Academy!5e0!3m2!1sen!2saz!4v1751270835696!5m2!1sen!2saz"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe> -->
+
+        <hr>
+
+        <!-- <iframe src="https://iticket.az/" frameborder="0" width="500px" height="500px"></iframe> -->
+        <iframe src="https://iticket.az/" frameborder="0" width="100%" height="1000px"></iframe>
+    </section>
+
+
+    <hr>
+    <!-- youtube video -->
+
+
+    <iframe width="942" height="530" src="https://www.youtube.com/embed/TBIjgBVFjVI"
+        title="Front-end web development is changing, quickly" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+    <hr>
+
+
+    <!-- absolute path -->
+    <!-- <img src="https://picsum.photos/536/354" alt=""> -->
+
+    <!-- <img src="C:\Users\user\Desktop\PF103\02.html\assets\images\291-536x354.jpg" alt="image"> -->
+
+
+
+    <!-- relative path -->
+    <!-- <img src="./assets/images/291-536x354.jpg" alt=""> -->
+
+
+    <hr>
+
+    <!-- id vs class -->
+
+
+    <h2 id="heading" class="bg-teal font-32">Lorem ipsum dolor sit.</h2>
+    <h2 class="bg-teal">Lorem ipsum dolor sit.</h2>
+
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, aut.</p>
+    <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, aut.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, aut.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, aut.</p>
+    <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, aut.</p>
+    <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, aut.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, aut.</p>
+
+
+
+    <!-- video -->
+
+    <video width="320" height="240" controls autoplay loop>
+        <source src="./assets/videos/movie.mp4" type="video/mp4">
+        <!-- <source src="movie.ogg" type="video/ogg"> -->
+
+        Your browser does not support the video tag.
+    </video>
+    <!-- 
+    <script>
+
+        window.addEventListener("click", ()=>{
+            window.alert("clicked!")
+        })
+    </script> -->
+
+
+</body>
+
+</html>
