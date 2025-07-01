@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+#heading {
+    color: blueviolet;
+}
+
+h1 {
+    font-size: 3.5rem;
+    /* color: blue; */
+    color: blue !important;
+}
+
+/* .text{
+            color: yellowgreen;
+        } */
+
+.heading {
+    color: red;
+}
+
+p.text{
+    color: tomato;
+}
+
+
+
+/* !important, inline css,id, class, tag, global selector (*), user agent */
+
+
+/* id - 100
+class - 10
+tag - 1
+* - 0 */
