@@ -1,0 +1,217 @@
+
+
+/* div *{
+    color: red;
+} */
+
+/* div span{
+    color: red;
+} */
+
+
+.heading.bg-red{
+    background-color: red;
+}
+
+
+section .heading{
+    background-color: orange;
+}
+
+.heading{
+    background-color: yellowgreen;
+}
+
+
+/* span, .text {
+    color: blueviolet;
+} */
+
+
+/* .content p{
+    color: chocolate;
+} */
+
+.content{
+    border: 2px solid;
+}
+.content > p{
+    color: chocolate;
+}
+
+
+/* .content + .box{
+    background-color: yellow;
+    width: 50px;
+    height: 50px;
+    border: 2px solid;
+} */
+
+.content ~ .box{
+    background-color: yellow;
+    width: 50px;
+    height: 50px;
+    border: 2px solid;
+}
+
+/* [target]{
+    color: red;
+} */
+
+a[target="_self"]{
+    background-color: teal;
+}
+
+/* [class]{
+    font-size: 48px;
+} */
+
+
+/* span[title~="sample"]{
+    font-size: 48px;
+    color: red;
+} */
+
+
+
+[title^="sample"]{
+    font-size: 48px;
+    color: green;
+}
+
+[title^="sample"]{
+    font-size: 48px;
+    color: green;
+}
+
+[href$=".pdf"]{
+    color: red;
+}
+
+
+/* pseudo classes */
+
+#selectors-doc:visited{
+    color: orange;
+}
+#selectors-doc:link{
+    color: red;
+}
+#selectors-doc:active{
+    color: green;
+    /* font-size: 24px; */
+}
+#selectors-doc:hover{
+    /* color: blueviolet; */
+    /* font-size: 24px; */
+}
+
+button.sign-up{
+    background-color: teal;
+    font-size: 16px;
+    padding: 1rem 2rem;
+    border: 2px solid teal;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.6s;
+}
+
+button.sign-up:hover{
+    background-color: transparent;
+    color: teal;
+}
+
+
+/* ul li:first-child{
+    color: orange;
+}
+ul li:last-child{
+    color: orange;
+}
+ul li:nth-child(3){
+    color: red;
+} */
+
+
+/* ul li:nth-child(2n){
+    color: red;
+} */
+
+/* ul li:nth-child(2n + 1){
+    color: blue;
+} */
+/*  
+ul li:nth-child(3n + 1){
+    color: blue;
+}
+ */
+
+
+
+
+ /* ul li:nth-of-type(2n){
+    color: red;
+ } */
+
+
+ /* .sample-text::first-line{
+    color: red;
+ } */
+ .sample-text::first-letter{
+    color: red;
+    font-size: 4rem;
+ }
+
+ .sample-text::selection{
+    color: red;
+    background-color: orange;
+ }
+
+ .pf{
+    font-size: 36px;
+    position: relative;
+ }
+
+ /* .pf::before{
+    content: "☆";
+    color: orange;
+ }
+ .pf::after{
+    content: "☆";
+    color: orange;
+ } */
+
+
+ .pf::before{
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+ }
+ .pf::after{
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: orange;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+ }
+
+
+ input::placeholder{
+    color: red; 
+ }
+
+ input:focus{
+    background-color: blanchedalmond;
+ }
+
+
+ ul li::marker{
+    color: red;
+ }
