@@ -1,0 +1,59 @@
+
+/* px, %, rem, em, vh, vw */
+
+/* vw - viewport width */
+/* vh - viewport height */
+html{
+    /* font-size: 16px; */
+    /* font-size: 10px; */
+}
+h3{
+    font-size: 16px;
+}
+
+.outer-box{
+    width: 400px;
+    height: 400px;
+    background-color: orange;
+}
+
+.middle-box{
+    /* width: 200px; */
+    width: 50%;
+    /* width: 50vw; */
+    height: 200px;
+    /* height: 50vh; */
+    background-color: brown;
+}
+
+.inner-box{
+    width: 50%;
+    height: 100px;
+    background-color: teal;
+}
+.inner-box img{
+    width: 100%;
+}
+
+/* 1rem = 16px */
+.text{
+    background-color: black;
+    color: white;
+    /* font-size: 24px; */
+    font-size: 1.5rem;
+}
+
+.text span{
+    color: red;
+    /* font-size: 2rem; */
+    font-size: 2em;
+}
+
+.boxes{
+    /* width: 6rem; */
+    width: 100vw;
+    height: 6rem;
+    background-color: red;
+}
+
+ 

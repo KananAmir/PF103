@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* text-decoration: none; */
+}
+
+.heading {
+    color: goldenrod;
+    font-size: 3rem;
+    background-color: black;
+    text-align: center;
+    padding: 1rem 0;
+    /* direction: rtl;
+    unicode-bidi: bidi-override; */
+
+    /* text-decoration-line: underline; */
+    /* text-decoration-line: overline; */
+    /* text-decoration-line: line-through; */
+
+    /* text-decoration-color: red; */
+    /* text-decoration-thickness: 5px; */
+
+    /* text-decoration-style: dotted; */
+    /* text-decoration-style: solid; */
+
+    /* text-decoration: underline red double 10px; */
+    /* text-decoration: underline; */
+
+    /* text-shadow: 5px 5px 3px red; */
+    text-shadow: 0px 9px 3px red;
+    /* text-shadow: 84px 43px 8px rgba(255,24,24,0.8); */
+
+    /* text-shadow: -14px -18px 7px rgba(27,49,206,0.72) */
+}
+
+.text {
+    color: red;
+    font-size: 1.5rem;
+    /* text-align: left; */
+    /* text-align: center; */
+    /* text-align: right; */
+    text-align: justify;
+    text-align-last: justify;
+    width: 80%;
+    margin: 2rem auto;
+
+    /* text-transform: uppercase; */
+    /* text-transform: lowercase; */
+    text-transform: capitalize;
+
+    text-indent: 2rem;
+
+    letter-spacing: 2px;
+
+    line-height: 1.4;
+
+    word-spacing: 1rem;
+
+    /* white-space: wrap; */
+    /* white-space: nowrap; */
+}
+
+span {
+    background-color: orange;
+    margin: 3rem 0;
+    display: inline-block;
+}
+
+.card {
+    width: 300px;
+    /* border: 1px solid; */
+    border-radius: 0.5rem;
+    margin: 50px auto;
+    padding: 2rem 1rem;
+    text-align: center;
+    /* box-shadow: 10px 10px 15px orange; */
+    box-shadow:
+        rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px,
+        rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px,
+        rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    box-shadow:
+        blue 0px 0px 0px 2px inset,
+        rgb(255, 255, 255) 10px -10px 0px -3px,
+        rgb(31, 193, 27) 10px -10px,
+        rgb(255, 255, 255) 20px -20px 0px -3px,
+        rgb(255, 217, 19) 20px -20px,
+        rgb(255, 255, 255) 30px -30px 0px -3px,
+        rgb(255, 156, 85) 30px -30px,
+        rgb(255, 255, 255) 40px -40px 0px -3px,
+        rgb(255, 85, 85) 40px -40px;
+    box-shadow:
+        rgb(85, 91, 255) 0px 0px 0px 3px,
+        rgb(31, 193, 27) 0px 0px 0px 6px,
+        rgb(255, 217, 19) 0px 0px 0px 9px,
+        rgb(255, 156, 85) 0px 0px 0px 12px,
+        rgb(255, 85, 85) 0px 0px 0px 15px;
+    box-shadow:
+        rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+        rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+        rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+        rgba(0, 0, 0, 0.06) 0px 2px 1px,
+        rgba(0, 0, 0, 0.09) 0px 4px 2px,
+        rgba(0, 0, 0, 0.09) 0px 8px 4px,
+        rgba(0, 0, 0, 0.09) 0px 16px 8px,
+        rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.card .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.card .price {
+    margin: 1rem;
+}

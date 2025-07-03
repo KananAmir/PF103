@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            border: 2px solid;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            border-width: 10px;
+            border-color: red;
+            /* border-style: solid; */
+            /* border-style: double; */
+            /* border-style: groove; */
+            /* border-style: inset; */
+            /* border: none; */
+
+            /* border-top-style: dashed;
+            border-right-style: groove;
+            border-bottom-style: solid;
+            border-left-style: dotted;
+
+            border-top-color: black;
+            border-right-color: yellow;
+            border-bottom-color: red;
+            border-left-color: teal; */
+
+
+            border: 10px solid red;
+            background-color: #fff;
+            /* border-left: 5px groove red; */
+            /* border-right: 5px groove orange; */
+
+            /* border-radius: 8px; */
+            /* border-radius: 1rem; */
+            /* border-radius: 50%; */
+            /* 
+            border-top-left-radius: 1rem;
+            border-bottom-right-radius: 1rem; */
+            border-top-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+        }
+
+
+        .polygon {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            /* clip-path: polygon(0 0, 0% 100%, 100% 50%); */
+            /* clip-path: polygon(100% 0, 0 0, 100% 100%, 0% 100%); */
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>css borders</h1>
+
+
+    <div class="box">
+
+    </div>
+
+    <hr>
+    <div class="polygon"></div>
+</body>
+
+</html>
