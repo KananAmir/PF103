@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 200vh;
+}
+
+header{
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* .fa-brands.fa-instagram{
+    color: orange;
+} */
+
+.header{
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+.header h2, nav ul li a, .social-icons i{
+    color: #fff;
+}
+
+.header ul {
+    display: flex;
+    gap: 1rem;
+}
+.fa-brands.fa-twitter{
+    transition: all 1s;
+}
+.fa-brands.fa-twitter:hover{
+    transform: scale(1.2);
+}
+
+/* 
+static
+realative
+absolute
+fixed
+sticky */
+
+
+.outer{
+    width: 1000px;
+    height: 600px;
+    border: 5px solid;
+    margin: 50px auto;
+    background-color: yellowgreen;
+    position: relative;
+}
+.inner{
+    width: 800px;
+    height: 400px;
+    border: 5px solid;
+    margin: 100px auto;
+    position: relative;
+    background-color: yellow
+}
+
+
+.box{
+    width: 100px;
+    height: 100px;
+}
+.box.box1{
+      background-color: blueviolet;
+      position: relative;
+      left: 20px;
+      top: 20px;
+      z-index: 9999;
+}
+.box.box2{
+      background-color: orange;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      /* left: 50%;
+      top: 50%; */
+
+      /* transform: translateX(-50%) translateY(-50%); */
+      /* transform: translate(-50%, -50%); */
+      /* left: calc(50% - 50px);
+      top: calc(50% - 50px) */
+
+}
+.box.box3{
+    background-color: red;
+    position: relative;
+    /* z-index: -1; */
+}
+.box.box4{
+    background-color: blue;
+    position: fixed;
+    right: 10%;
+    top: 10%;
+}
+.box.sticky{
+    background-color: green;
+    position: sticky;
+    left: 60%   ;
+    top: 200px;
+}
+
+.input-wrapper{
+    width: 300px;
+    margin: 50px auto;
+    background-color: red;
+    border-radius: 0.5rem;
+
+    position: relative;
+}
+
+.input-wrapper input{
+    padding: 0.5rem;
+    padding-right: 2rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    outline: none;
+    /* border: none; */
+}
+.input-wrapper .fa-magnifying-glass{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
