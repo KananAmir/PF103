@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    /* background-color: antiquewhite; */
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+.header nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav ul li.hot {
+    position: relative;
+}
+nav ul li.hot::before {
+    content: "HOT";
+    background-color: #ff003c;
+    color: white;
+    position: absolute;
+    top: -19px;
+    right: -20px;
+    font-size: 10px;
+    padding: 3px 8px;
+    border-radius: 6px;
+}
+
+.header ul li a {
+    color: #000;
+    transition: all 0.5s;
+}
+.header ul li a:hover {
+    color: #ff003c;
+}
+
+.actions .search-wrapper {
+    position: relative;
+}
+.actions .search-wrapper .fa-magnifying-glass {
+    position: absolute;
+    right: 16px;
+    top: 10px;
+}
+.search-wrapper input {
+    width: 100%;
+    padding: 10px 20px;
+    padding-right: 36px;
+    border: 1px solid #eeeeee;
+    border-radius: 30px;
+}
+
+.btn.btn-primary {
+    background-color: #2577fd;
+    border-radius: 25px;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    font-size: 1.2rem;
+}
+
+.actions .fa-heart,
+.actions .fa-cart-shopping {
+    padding: 1rem;
+    border: 1px solid #eeeeee;
+    border-radius: 50%;
+}
+
+#banner {
+    background-color: #c8ebff;
+}
+#banner .banner {
+    display: flex;
+    gap: 2rem;
+}
+
+.banner .banner-image,
+.banner .content {
+    width: 50%;
+}
+.banner .banner-image img {
+    width: 100%;
+}
+
+.banner .content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.content .discount {
+    font-family: "Yellowtail", cursive;
+    color: #2577fd;
+    font-size: 40px;
+    display: inline-block;
+    font-style: italic;
+}
+.content h1 {
+  font-size: 60px;
+  line-height: 1.2;
+}
+
+
+.content p{
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 300;
+    margin-bottom: 39px;
+    color: #313639;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+}
+
+
+#features{
+    padding: 3rem 0;
+}
+
+#features .features{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.features .card{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+footer{
+    padding: 3rem 0;
+}
+
+.footer .footer-top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.footer .footer-top > div{
+    width: 20%;
+}
+
+.footer-top h4, .footer-top .logo{
+    margin-bottom: 2rem;
+}
+
+.footer-top ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.footer .footer-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom ul{
+    display: flex;
+    gap: 1rem;
+}
