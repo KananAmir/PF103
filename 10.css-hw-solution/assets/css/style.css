@@ -188,6 +188,15 @@ footer {
     display: flex;
     gap: 1rem;
 }
+.footer-bottom ul li a .fa-brands {
+     transition: all 0.5s;
+     font-size: 1.5rem;
+  
+}
+.footer-bottom ul li a:hover .fa-brands {
+    /* transform: translateY(-5px); */
+    transform: scale(1.2);
+}
 
 .header .menu {
     display: none;
