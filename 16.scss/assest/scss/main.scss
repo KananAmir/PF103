@@ -1,0 +1,117 @@
+@import "./reset";
+@import "./variables";
+@import "./global";
+@import "./mixin";
+@import "./extend";
+// $primary-color: "#004030";
+
+// header{
+//     background-color: $primary-color;
+//     // background-color: #004030;
+// }
+
+// h2{
+//     color: $primary-color;
+//     font-family: $font;
+// }
+
+
+header {
+    background-color: $primary-color;
+    .header {
+        // display: flex;
+        // justify-content: space-between;
+        // align-items: center;
+
+        // @include flexBox();
+        @include flexBox(space-between);
+        // @include flexBox(space-between, center);
+        height: 80px;
+        .logo {
+            color: teal;
+        }
+        nav {
+            ul {
+                display: flex;
+                gap: 2rem;
+                list-style: none;
+                li {
+                    a {
+                        color: teal;
+                        &.active {
+                            color: red;
+                        }
+                    }
+                }
+            }
+
+            // @media only screen and (max-width: 991px){
+            //     display: none;
+            // }
+
+            @include for-tablet-up{
+                display: none
+            }
+
+        }
+        .btns {
+            button {
+                // background-color: teal;
+                // color: white;
+                // padding: 1rem 2rem;
+                // border: 2px solid teal;
+                // border-radius: 0.5rem;
+                // cursor: pointer;
+                // transition: all 0.5s;
+                @include primaryButton();
+                &:hover {
+                    background-color: transparent;
+                    color: teal;
+                    border: 2px solid teal;
+                }
+            }
+            //     @media only screen and (max-width: 991px){
+            //     display: none;
+            // }
+               @include for-tablet-up{
+                display: none
+            }
+        }
+        .menu{
+            display: none;
+            .fa-bars{
+                color: teal;
+            }
+            // @media only screen and (max-width: 991px){
+            //     display: block;
+            // }
+            @include for-tablet-up{
+                display: block;
+            }
+        }
+    }
+}
+
+
+
+// .text{
+//     color: green;
+//     &.bg-red{
+//         background-color: red;
+//     }
+// }
+
+
+
+.contact-us{
+    @include primaryButton(orange, #000, #000)
+}
+
+
+.contact-us{
+    @include primaryButton(orange, #000, #000)
+}
+
+.search{
+    @extend %main-input;
+}

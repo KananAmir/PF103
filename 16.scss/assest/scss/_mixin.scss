@@ -1,0 +1,29 @@
+@mixin flexBox($justify: center, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin primaryButton($bg-color: teal, $color: white, $border-color: teal) {
+    background-color: $bg-color;
+    color: white;
+    padding: 1rem 2rem;
+    border: 2px solid $border-color;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+
+@mixin for-phone-only {
+  @media (max-width: 767px) { @content; }
+}
+// @mixin for-tablet-portrait-up {
+//   @media (min-width: 600px) { @content; }
+// }
+// @mixin for-tablet-landscape-up {
+//   @media (min-width: 900px) { @content; }
+// }
+@mixin for-tablet-up {
+  @media (max-width: 1023px) { @content; }
+}

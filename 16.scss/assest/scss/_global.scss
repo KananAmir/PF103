@@ -1,0 +1,11 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: $font;
+
+    @media only screen and (max-width:1200px){
+        padding: 0 5%;
+    }
+}
+
+

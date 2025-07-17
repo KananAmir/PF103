@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Lato", sans-serif;
+}
+@media only screen and (max-width: 1200px) {
+  .container {
+    padding: 0 5%;
+  }
+}
+
+.search {
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  background-color: rgb(219, 166, 69);
+}
+
+header {
+  background-color: #efb036;
+}
+header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+header .header .logo {
+  color: teal;
+}
+header .header nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+header .header nav ul li a {
+  color: teal;
+}
+header .header nav ul li a.active {
+  color: red;
+}
+@media (max-width: 1023px) {
+  header .header nav {
+    display: none;
+  }
+}
+header .header .btns button {
+  background-color: teal;
+  color: white;
+  padding: 1rem 2rem;
+  border: 2px solid teal;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+header .header .btns button:hover {
+  background-color: transparent;
+  color: teal;
+  border: 2px solid teal;
+}
+@media (max-width: 1023px) {
+  header .header .btns {
+    display: none;
+  }
+}
+header .header .menu {
+  display: none;
+}
+header .header .menu .fa-bars {
+  color: teal;
+}
+@media (max-width: 1023px) {
+  header .header .menu {
+    display: block;
+  }
+}
+
+.contact-us {
+  background-color: orange;
+  color: white;
+  padding: 1rem 2rem;
+  border: 2px solid #000;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.contact-us {
+  background-color: orange;
+  color: white;
+  padding: 1rem 2rem;
+  border: 2px solid #000;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}/*# sourceMappingURL=main.css.map */
