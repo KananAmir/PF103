@@ -1,0 +1,6 @@
+Math ++
+Spread vs Rest operators
+objects
+deep vs shallow copy 
+destructing
+for in & for of
