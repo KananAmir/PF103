@@ -1,6 +1,7 @@
 Math ++
 Spread vs Rest operators
-objects
+objects ++
 deep vs shallow copy 
-destructing
-for in & for of
+destructing++
+for in & for of ++
+module
