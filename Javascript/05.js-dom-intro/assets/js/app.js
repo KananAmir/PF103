@@ -190,6 +190,7 @@ products.push({
     price: 1000,
     category: "electronics"
 })
+
 products.forEach((product) => {
     const row = document.createElement("tr");
     const tdName = document.createElement("td");
