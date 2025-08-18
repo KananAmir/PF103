@@ -1,24 +1,5 @@
 const products = [
     {
-        id: "6403c49deb0d73a0453b6c6e",
-        title: "iPhone X 128GB",
-        brand: "Apple",
-        description:
-            "The iPhone X was Apple's flagship 10th anniversary iPhone featuring a 5.8-inch OLED display, facial recognition, 3D camera functionality, a glass body, and an A11 Bionic processor.",
-        price: 960,
-        images: [
-            "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-x-new-1.jpg",
-            "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-x-new-2.jpg",
-            "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-x-4.jpg",
-            "https://fdn.gsmarena.com/imgroot//reviews/17/apple-iphone-x/lifestyle/-728w2/gsmarena_019.jpg",
-        ],
-        thumbnail: "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-x.jpg",
-        category: "smartphones",
-        stock: 55,
-        tags: ["mobile phone", "smartphone", "ios"],
-        rating: 5,
-    },
-    {
         id: "6403c67feb0d73a0453b6c72",
         title: "iPhone 11 128GB",
         brand: "Apple",
@@ -540,5 +521,49 @@ function renderProducts(productsArray) {
 
 }
 
-
 renderProducts(products);
+
+
+
+const searchInput = document.querySelector("#search")
+const sortSelect = document.querySelector("#sort")
+
+searchInput.addEventListener("keyup", (e) => {
+    const value = e.target.value.toLowerCase().trim()
+    // const filteredProducts = products.filter((product) => product.title.toLowerCase().trim().startsWith(value))
+    const filteredProducts = products.filter((product) => product.title.toLowerCase().trim().includes(value))
+
+    renderProducts(filteredProducts)
+})
+
+
+sortSelect.addEventListener("change", (e) => {
+    const sortValue = e.target.value
+    let sortedProducts = null;
+
+    switch (sortValue) {
+        case "ascByPrice":
+            sortedProducts = products.toSorted((a, b) => a.price - b.price)
+            break;
+
+        case "descByPrice":
+            sortedProducts = products.toSorted((a, b) => b.price - a.price)
+            break;
+
+        case "ascByTitle":
+            sortedProducts = products.toSorted((a, b) => a.title.toLowerCase().localeCompare(b.title.toLowerCase()))
+            break;
+        case "descByTitle":
+            sortedProducts = products.toSorted((a, b) => b.title.toLowerCase().localeCompare(a.title.toLowerCase()))
+            break;
+
+        default:
+            sortedProducts = structuredClone(products)
+            break;
+    }
+
+
+    renderProducts(sortedProducts)
+
+
+})
