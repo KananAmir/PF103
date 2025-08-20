@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <title>Notepad</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f9f9f9;
+    }
+    h1 {
+      text-align: center;
+    }
+    textarea {
+      width: 100%;
+      height: 300px;
+      font-size: 16px;
+      padding: 10px;
+      resize: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>📝 Sadə Notepad</h1>
+  <textarea id="noteArea" placeholder="Buraya qeydlərinizi yazın..."></textarea>
+
+  <script>
+    const noteArea = document.getElementById("noteArea");
+
+    // LocalStorage-dən əvvəlki yazını oxuma
+    const savedNote = localStorage.getItem("note");
+    if (savedNote) {
+      noteArea.value = savedNote;
+    }
+
+    // Hər dəfə input dəyişəndə yaddaşa yazmaq
+    noteArea.addEventListener("input", (e) => {
+      localStorage.setItem("note", e.target.value);
+    });
+  </script>
+</body>
+</html>
