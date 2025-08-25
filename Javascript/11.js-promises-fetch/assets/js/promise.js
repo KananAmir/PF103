@@ -73,11 +73,16 @@ myPromise.
         console.log(err);
     })
 
+
+
+
+
     console.log(1);
 
     setTimeout(()=>{
         console.log(2);
-    }, 0)
+    })
+
 
     new Promise((res, rej)=>{
         res(3)

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Document</title>
+
+    <style>
+        body{
+            background: olivedrab;
+        }
+        .loader {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            box-shadow: inset 0 0 20px -5px rgba(255, 255, 255, 0.5),
+                inset 0 -40px 40px -20px rgba(255, 255, 255, 0.5);
+            background: linear-gradient(#FF3D00 120px, transparent 0) no-repeat;
+            background-position: 0px 120px;
+            animation: fillLq 10s linear infinite alternate;
+        }
+
+        .loader:before {
+            position: absolute;
+            content: '';
+            width: 40%;
+            height: 25%;
+            top: 20px;
+            left: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            transform: rotate(-45deg);
+        }
+
+        @keyframes fillLq {
+
+            0%,
+            10% {
+                background-position: 0 120px
+            }
+
+            90%,
+            100% {
+                background-position: 0 0
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+       <header class="bg-gray-500 py-5">
+        <div class="container mx-auto">
+            <div class="header flex justify-center">
+                <nav>
+                    <ul class="flex gap-3">
+                        <li>
+                            <a href="index.html">Categories</a>
+                        </li>
+                        <li>
+                            <a href="addCategory.html">Add Category</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="shadow-lg rounded-lg overflow-hidden mx-4 md:mx-10 my-5">
+        <table class="w-full table-fixed">
+            <thead>
+                <tr class="bg-gray-100">
+                    <th class="w-1/4 py-4 px-6 text-left text-gray-600 font-bold uppercase">ID</th>
+                    <th class="w-1/4 py-4 px-6 text-left text-gray-600 font-bold uppercase">Name</th>
+                    <th class="w-1/4 py-4 px-6 text-left text-gray-600 font-bold uppercase">Description</th>
+                    <th class="w-1/4 py-4 px-6 text-left text-gray-600 font-bold uppercase">Actions</th>
+                </tr>
+            </thead>
+            <tbody class="bg-white">
+                <!-- <tr>
+                    <td class="py-4 px-6 border-b border-gray-200">John Doe</td>
+                    <td class="py-4 px-6 border-b border-gray-200 truncate">johndoe@gmail.com</td>
+                    <td class="py-4 px-6 border-b border-gray-200">555-555-5555</td>
+                    <td class="py-4 px-6 border-b border-gray-200">
+                        <button
+                            class="bg-red-500 text-white px-4 py-2 rounded-full text-xs cursor-pointer">delete</button>
+                    </td>
+                </tr> -->
+
+
+            </tbody>
+        </table>
+
+        
+    </div>
+    <div class="spinner justify-center items-center h-[100vh] hidden">
+        <div class="loader"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./assets/js/app.js" type="module"></script>
+</body>
+
+</html>

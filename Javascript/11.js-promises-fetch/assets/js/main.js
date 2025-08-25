@@ -58,6 +58,8 @@ fetch("https://fakestoreapi.com/products").then((res) => res.json()).then((data)
 })
 
 
+console.log("asdfgh");
+
 
 ////////////////////////////////////////////
 
@@ -73,7 +75,7 @@ function getAdvice (){
     fetch("https://api.adviceslip.com/advice").then((res)=>{
         return res.json()
     }).then((data)=>{
-        console.log(data?.slip?.advice);
+        console.log(data.slip.advice);
         advice.textContent = data?.slip?.advice
     })
     .catch((err)=>{
