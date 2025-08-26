@@ -2,41 +2,39 @@ import { BASE_URL } from "./constants.js"
 
 const addCategoryForm = document.querySelector("form")
 
-addCategoryForm.addEventListener("submit", (e) => {
+addCategoryForm.addEventListener("submit", async (e) => {
     e.preventDefault()
-    const name = document.querySelector("#name").value.trim()
-    const description = document.querySelector("#description").value.trim()
 
-    // console.log(name);
-    // console.log(description);
+    try {
 
+        const name = document.querySelector("#name").value.trim()
+        const description = document.querySelector("#description").value.trim()
 
-    const isValidate = validate()
-
-    if (isValidate) {
-        const newCategory = {
-            name: name,
-            description: description
-        }
+        // console.log(name);
+        // console.log(description);
 
 
-        fetch(`${BASE_URL}/categories`, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(newCategory)
-        }).then((res) => {
+        const isValidate = validate()
 
-            if (res.status >= 200 && res.status < 300) {
+        if (isValidate) {
+
+            const newCategory = {
+                name: name,
+                description: description
+            }
+
+            const response = await axios.post(`${BASE_URL}/categories`, newCategory)
+
+            if (response.status >= 200 && response.status < 300) {
                 setTimeout(() => {
                     window.location.href = "index.html"
                 }, 1500);
             }
-        }).catch((err) => {
-            console.log(err);
-        })
+        }
+    } catch (error) {
+        console.log(error);
     }
+
 
 
 
